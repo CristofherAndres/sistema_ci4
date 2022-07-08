@@ -42,6 +42,8 @@ $routes->get('/news', 'News::index');
 $routes->get('news/(:segment)', 'News::view/$1');
 $routes->get('/usuarios', 'Users::index');
 $routes->get('/usuarios/formulario', 'Users::create');
+$routes->post('/usuarios/enviar-form', 'Users::store');
+
 
 /*
  * --------------------------------------------------------------------

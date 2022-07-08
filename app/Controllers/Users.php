@@ -20,5 +20,17 @@ class Users extends Controller{
         .view('templates/footer');
     }
 
+    public function store(){
+        $usuarios = New UsuarioModel();
+        $data = [
+            'name' => $this->request->getVar('name'),
+            'email' =>$this->request->getVar('email')
+        ];
+
+        $usuarios->insert($data);
+        return 'Se inserto el dato';
+
+    }
+
 
 }

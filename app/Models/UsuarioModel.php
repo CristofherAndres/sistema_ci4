@@ -6,7 +6,7 @@ class UsuarioModel extends Model{
 
     protected $table = 'users';
     protected $primaryKey = 'id';
-    protected $allowedField = ['name','email'];
+    protected $allowedFields = ['name','email'];
 
     public function getUsers(){
         return $this->findAll();
