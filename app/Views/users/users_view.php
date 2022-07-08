@@ -24,9 +24,9 @@
                             <td><?php echo $user['name'] ?></td>
                             <td><?php echo $user['email'] ?></td>
                             <td>
-                                <a href="#">Eliminar</a>
-                                <a href="#">Editar</a>
-                                <a href="#">Ver</a>
+                                <a href="<?php echo base_url('/usuarios/eliminar/' . $user['id']) ?>" class="btn btn-danger"><i class="bi bi-trash3"></i></a>
+                                <a href="<?php echo base_url('/usuarios/actualizar/' . $user['id']) ?>" class="btn btn-info"><i class="bi bi-pencil-square"></i></a>
+                                <a href="#" class="btn btn-warning"><i class="bi bi-eye"></i></a>
                             </td>
                         </tr>
                     <?php endforeach; ?>

@@ -169,3 +169,25 @@ in SYSTEMPATH/BaseModel.php on line 1138.
  6 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
  7 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  8 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-08 10:50:45 --> Undefined variable $user
+in APPPATH/Views/users/users_form_update.php on line 6.
+ 1 APPPATH/Views/users/users_form_update.php(6): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user', 'APPPATH/Views/users/users_form_update.php', 6)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users/users_form_update.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('users/users_form_update', [], true)
+ 5 APPPATH/Controllers/Users.php(45): view('users/users_form_update')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Users->update_form('1')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-08 10:51:04 --> Undefined variable $user_obj
+in APPPATH/Views/users/users_form_update.php on line 9.
+ 1 APPPATH/Views/users/users_form_update.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_obj', 'APPPATH/Views/users/users_form_update.php', 9)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/users/users_form_update.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('users/users_form_update', [], true)
+ 5 APPPATH/Controllers/Users.php(45): view('users/users_form_update')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\Users->update_form('1')
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

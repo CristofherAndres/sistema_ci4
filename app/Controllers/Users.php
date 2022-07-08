@@ -28,7 +28,34 @@ class Users extends Controller{
         ];
 
         $usuarios->insert($data);
-        return 'Se inserto el dato';
+        return redirect()->to(base_url('/usuarios'));
+
+    }
+
+    public function delete($id = null){
+        $usuarios = New UsuarioModel();
+        $data['user'] = $usuarios->where('id', $id)->delete($id);
+        return redirect()->to(base_url('/usuarios'));
+    }
+
+    public function update_form($id){
+        $usuarios = New UsuarioModel();
+        $data['user'] = $usuarios->where('id',$id)->first();
+        return view('templates/header',$data)
+        .view('users/users_form_update')
+        .view('templates/footer');
+    }
+
+    public function update(){
+        $usuarios = New UsuarioModel();
+        $id = $this->request->getVar('id');
+        $data = [
+            'name' => $this->request->getVar('name'),
+            'email' =>$this->request->getVar('email')
+        ];
+
+        $usuarios->update($id,$data);
+        return redirect()->to(base_url('/usuarios'));
 
     }
 

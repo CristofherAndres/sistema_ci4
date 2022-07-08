@@ -40,9 +40,14 @@ $routes->get('/pages', 'Pages::index');
 $routes->get('/pages/contenido', 'Pages::contenido');
 $routes->get('/news', 'News::index');
 $routes->get('news/(:segment)', 'News::view/$1');
+
+/* Gestion de usuarios */
 $routes->get('/usuarios', 'Users::index');
 $routes->get('/usuarios/formulario', 'Users::create');
 $routes->post('/usuarios/enviar-form', 'Users::store');
+$routes->get('/usuarios/eliminar/(:num)', 'Users::delete/$1');
+$routes->get('/usuarios/actualizar/(:num)', 'Users::update_form/$1');
+$routes->post('/usuarios/actualizar/', 'Users::update');
 
 
 /*
