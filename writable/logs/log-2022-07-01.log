@@ -1,0 +1,40 @@
+CRITICAL - 2022-07-01 10:04:52 --> syntax error, unexpected token "=>", expecting "]"
+in APPPATH/Controllers/News.php on line 12.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/News.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\News')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\News')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\News', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 10:18:27 --> Array to string conversion
+in APPPATH/Views/news/overview.php on line 12.
+ 1 APPPATH/Views/news/overview.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH/Views/news/overview.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/news/overview.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('news/overview', [], true)
+ 5 APPPATH/Controllers/News.php(17): view('news/overview')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 10:20:40 --> Undefined variable $news_ite
+in APPPATH/Views/news/overview.php on line 12.
+ 1 APPPATH/Views/news/overview.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $news_ite', 'APPPATH/Views/news/overview.php', 12)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/news/overview.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('news/overview', [], true)
+ 5 APPPATH/Controllers/News.php(17): view('news/overview')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\News->index()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-07-01 10:53:53 --> syntax error, unexpected token "/"
+in APPPATH/Views/news/overview.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('news/overview', [], true)
+ 3 APPPATH/Controllers/News.php(17): view('news/overview')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\News->index()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\News))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
